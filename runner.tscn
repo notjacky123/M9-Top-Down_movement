@@ -35,7 +35,7 @@ position = Vector2(0, 1)
 
 [node name="SubViewport" type="SubViewport" parent="."]
 transparent_bg = true
-size = Vector2i(124, 150)
+size = Vector2i(138, 153)
 
 [node name="RunnerVisualRed" parent="SubViewport" instance=ExtResource("2_f7b3c")]
 unique_name_in_owner = true
