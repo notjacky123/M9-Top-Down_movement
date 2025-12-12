@@ -2,31 +2,30 @@
 
 [ext_resource type="Texture2D" uid="uid://tgs14f485wph" path="res://assets/kenney-particles/smoke_04.png" id="1_btvwu"]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_btvwu"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_67827"]
 blend_mode = 1
 
 [sub_resource type="Curve" id="Curve_aetp2"]
-_data = [Vector2(0, 0.65454555), 0.0, 3.1601734, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+_data = [Vector2(0, 0.6592399), 0.0, 3.2419016, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CurveTexture" id="CurveTexture_5825l"]
 curve = SubResource("Curve_aetp2")
 
 [sub_resource type="Gradient" id="Gradient_boeb1"]
-offsets = PackedFloat32Array(0, 0.7813505)
-colors = PackedColorArray(0.65234375, 0.41187194, 0, 1, 0.6308594, 0, 0, 1)
+colors = PackedColorArray(0.62109375, 0.39214155, 0, 1, 0.58984375, 0.0069122314, 0, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_gj3wy"]
 gradient = SubResource("Gradient_boeb1")
 
-[sub_resource type="Curve" id="Curve_67827"]
-_data = [Vector2(0, 0), 0.0, 7.051139, 0, 0, Vector2(0.23013699, 1), 0.0, 0.0, 0, 0, Vector2(0.81369865, 0.06969702), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+[sub_resource type="Curve" id="Curve_gqo14"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.23013698, 1), 0.0, 0.0, 0, 0, Vector2(0.8082192, 0.06969702), -0.039037906, -0.039037906, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 4
 
-[sub_resource type="CurveTexture" id="CurveTexture_aetp2"]
-curve = SubResource("Curve_67827")
+[sub_resource type="CurveTexture" id="CurveTexture_63nh0"]
+curve = SubResource("Curve_gqo14")
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5825l"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_sr7io"]
 particle_flag_disable_z = true
 emission_shape = 1
 emission_sphere_radius = 10.0
@@ -39,15 +38,15 @@ initial_velocity_max = 70.0
 gravity = Vector3(0, 0, 0)
 scale_min = 0.19999999
 scale_max = 0.19999999
-scale_curve = SubResource("CurveTexture_aetp2")
+scale_curve = SubResource("CurveTexture_63nh0")
 color_ramp = SubResource("GradientTexture1D_gj3wy")
 alpha_curve = SubResource("CurveTexture_5825l")
 
 [node name="testparticles" type="Node2D"]
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-material = SubResource("CanvasItemMaterial_btvwu")
+material = SubResource("CanvasItemMaterial_67827")
 amount = 30
 texture = ExtResource("1_btvwu")
 lifetime = 3.0
-process_material = SubResource("ParticleProcessMaterial_5825l")
+process_material = SubResource("ParticleProcessMaterial_sr7io")

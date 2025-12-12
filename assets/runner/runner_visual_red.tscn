@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dkgxdq5fb0tob" path="res://assets/runner/red_parts/hand.png" id="10_e8mf4"]
 
 [node name="RunnerVisualRed" instance=ExtResource("1_i8e4b")]
-clip_children = 2
 
 [node name="FootL" parent="Visual" index="0"]
 scale = Vector2(0.999957, 0.99995697)
@@ -29,26 +28,26 @@ texture = ExtResource("2_pbjpl")
 
 [node name="ArmR" parent="Visual" index="2"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(16, -62.323658, 48, -36.323658)
+points = PackedVector2Array(16, -71.33802, 48, -45.33802)
 
 [node name="ArmL" parent="Visual" index="3"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(-16, -62.323658, -48, -36.323658)
+points = PackedVector2Array(-16, -71.33802, -48, -45.33802)
 
 [node name="LegR" parent="Visual" index="4"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(16, -28.323658, 16, -23)
+points = PackedVector2Array(16, -37.33802, 16, -23)
 
 [node name="LegL" parent="Visual" index="5"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(-16, -28.323658, -16, -23)
+points = PackedVector2Array(-16, -37.33802, -16, -23)
 
 [node name="Body" parent="Visual" index="6"]
-position = Vector2(0, -44.214565)
+position = Vector2(0, -53.43802)
 texture = ExtResource("3_c2s05")
 
 [node name="HeadShape" parent="Visual" index="7"]
-position = Vector2(0, -131.61156)
+position = Vector2(0, -140.63309)
 texture = ExtResource("4_jlvl7")
 
 [node name="Face" parent="Visual/HeadShape" index="0"]
@@ -59,23 +58,23 @@ position = Vector2(192, 0)
 texture = ExtResource("7_gwbl7")
 
 [node name="EarR" parent="Visual" index="8"]
-position = Vector2(82, -120.94876)
+position = Vector2(82, -129.97029)
 texture = ExtResource("8_0e8o4")
 
 [node name="AntennaR" parent="Visual/EarR" index="0"]
 texture = ExtResource("9_wrnpm")
 
 [node name="EarL" parent="Visual" index="9"]
-position = Vector2(-82, -120.94876)
+position = Vector2(-82, -129.97029)
 texture = ExtResource("8_0e8o4")
 
 [node name="AntennaL" parent="Visual/EarL" index="0"]
 texture = ExtResource("9_wrnpm")
 
 [node name="HandR" parent="Visual" index="10"]
-position = Vector2(48, -36.214565)
+position = Vector2(48, -45.43802)
 texture = ExtResource("10_e8mf4")
 
 [node name="HandL" parent="Visual" index="11"]
-position = Vector2(-48, -36.214565)
+position = Vector2(-48, -45.43802)
 texture = ExtResource("10_e8mf4")
